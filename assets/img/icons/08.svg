@@ -1,0 +1,25 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  fill="none"
+  stroke="#B8860B"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path
+    d="M50 18
+           C67 18 82 30 82 50
+           C82 70 67 82 50 82
+           C33 82 22 70 22 55
+           C22 40 33 32 46 32
+           C59 32 68 40 68 52
+           C68 64 59 70 50 70
+           C41 70 36 64 36 58"
+    stroke-width="1"
+  ></path>
+  <circle cx="50" cy="18" r="2.6" stroke-width="1"></circle>
+  <circle cx="82" cy="50" r="2.6" stroke-width="1"></circle>
+  <circle cx="50" cy="82" r="2.6" stroke-width="1"></circle>
+  <circle cx="36" cy="58" r="2.6" stroke-width="1"></circle>
+  <circle cx="50" cy="50" r="34" stroke-width="0.5" stroke-dasharray="2 2"></circle>
+</svg>

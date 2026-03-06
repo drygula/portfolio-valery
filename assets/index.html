@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Numerologist Website Layout</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<div class="page">
+			<header class="header">
+				<div class="container header__inner">
+					<a class="logo js-navigation" href="#top" aria-label="Valery">
+						<img src="img/logo.svg" alt="" />
+					</a>
+
+					<nav class="nav" aria-label="Primary navigation">
+						<ul class="nav__list">
+							<li>
+								<a class="nav__link js-navigation" href="#courses">Курси</a>
+							</li>
+							<li>
+								<a class="nav__link js-navigation" href="#services">Послуги</a>
+							</li>
+							<li>
+								<a class="nav__link js-navigation" href="#about">Про мене</a>
+							</li>
+							<li>
+								<a class="nav__link js-navigation" href="#contact">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button
+						class="header__toggle"
+						type="button"
+						aria-label="Toggle menu"
+						aria-expanded="false"
+						data-menu-toggle>
+						<img src="img/icon-menu.svg" alt="" aria-hidden="true" />
+					</button>
+				</div>
+
+				<div class="container header__drawer" data-menu-drawer>
+					<nav class="nav" aria-label="Mobile navigation">
+						<ul class="nav__list">
+							<li>
+								<a class="nav__link" href="#courses" data-menu-link>Courses</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#services" data-menu-link
+									>Services</a
+								>
+							</li>
+							<li>
+								<a class="nav__link" href="#about" data-menu-link>About</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#contact" data-menu-link>Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<main id="top">
+				<section class="hero" aria-label="Hero">
+					<div class="hero__bg" aria-hidden="true">
+						<div class="hero__geometry">
+							<svg viewBox="0 0 500 500" class="hero__decor _01">
+								<circle
+									cx="250"
+									cy="250"
+									r="248"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"
+									stroke-dasharray="4 4"></circle>
+								<path
+									d="M250 10 L466 385 L34 385 Z"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"></path>
+								<path
+									d="M250 490 L34 115 L466 115 Z"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"></path>
+							</svg>
+
+							<svg viewBox="0 0 400 400" class="hero__decor _02">
+								<polygon
+									points="200,10 390,105 390,295 200,390 10,295 10,105"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.8"></polygon>
+								<circle
+									cx="200"
+									cy="200"
+									r="150"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"></circle>
+								<path
+									d="M200 10 L200 390 M10 105 L390 295 M390 105 L10 295"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"
+									opacity="0.5"></path>
+							</svg>
+
+							<svg viewBox="0 0 300 300" class="hero__decor _03">
+								<circle
+									cx="150"
+									cy="150"
+									r="140"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1"></circle>
+								<circle
+									cx="150"
+									cy="150"
+									r="100"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"
+									stroke-dasharray="2 4"></circle>
+								<rect
+									x="75"
+									y="75"
+									width="150"
+									height="150"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"
+									transform="rotate(45 150 150)"></rect>
+							</svg>
+
+							<svg viewBox="0 0 100 100" class="hero__decor _04">
+								<circle
+									cx="50"
+									cy="50"
+									r="45"
+									fill="none"
+									stroke="currentColor"
+									stroke-width=".5"></circle>
+								<circle
+									cx="50"
+									cy="50"
+									r="10"
+									stroke="currentColor"
+									stroke-width="1"></circle>
+							</svg>
+						</div>
+					</div>
+
+					<div class="container hero__inner">
+						<div class="hero__divider" aria-hidden="true"></div>
+
+						<h1 class="hero__title">Валерія Цикало</h1>
+						<p class="hero__subtitle">Нумеролог</p>
+
+						<p class="hero__lead">
+							Магія — всередині тебе.
+							<br />
+							Дозволь числам підказати шлях, а Всесвіту — направити.
+						</p>
+
+						<div class="hero__buttons">
+							<a class="button _large js-navigation" href="#courses"
+								>Отримати курс</a
+							>
+							<a class="button _large js-navigation" href="#services"
+								>Замовити послугу</a
+							>
+							<a class="button _large js-navigation" href="#contact"
+								>Прямий зв'язок</a
+							>
+						</div>
+					</div>
+
+					<div class="hero__scroll" aria-hidden="true"></div>
+				</section>
+
+				<section class="problem section" aria-label="Problem &amp; Offer">
+					<div class="problem__bg" aria-hidden="true">
+						<span class="problem__blob problem__blob--left"></span>
+						<span class="problem__blob problem__blob--right"></span>
+					</div>
+
+					<div class="container">
+						<div class="problem__grid">
+							<article class="problem__card problem__card--pain">
+								<div class="text-content">
+									<h2>Ти можеш бути сильною людиною</h2>
+									<h3>Але…</h3>
+
+									<ul>
+										<li>Гроші не примножуються</li>
+										<li>Стосунки повторюються по одному сценарію</li>
+										<li>Відчуваєш, що можеш більше, але щось блокує</li>
+										<li>Тебе долає страх зробити ривок в невідоме</li>
+									</ul>
+								</div>
+
+								<div class="problem__decor">
+									<img src="img/decor-01.svg" alt="" />
+									<img src="img/decor-02.svg" alt="" />
+								</div>
+							</article>
+
+							<article class="problem__card problem__card--offer">
+								<header class="section-head">
+									<h2 class="section__title _center">Я показую:</h2>
+								</header>
+
+								<div class="problem__features" role="list">
+									<article class="problem__feature" role="listitem">
+										<div class="problem__feature-icon" aria-hidden="true">
+											<img src="img/decisions/decision-01-1.svg" alt="" />
+										</div>
+										<div class="problem__feature-body">
+											<h3 class="problem__feature-title">
+												Твоє призначення, талант
+											</h3>
+											<p class="problem__feature-text">
+												Унікальний числовий план, закодований у твоїй даті
+												народження та імені
+											</p>
+										</div>
+									</article>
+
+									<article class="problem__feature" role="listitem">
+										<div class="problem__feature-icon" aria-hidden="true">
+											<img src="img/decisions/decision-02-1.svg" alt="" />
+										</div>
+										<div class="problem__feature-body">
+											<h3 class="problem__feature-title">Кармічні вузли</h3>
+											<p class="problem__feature-text">
+												Стародавні візерунки, що передавалися з покоління в
+												покоління
+											</p>
+										</div>
+									</article>
+
+									<article class="problem__feature" role="listitem">
+										<div class="problem__feature-icon" aria-hidden="true">
+											<img src="img/decisions/decision-03-1.svg" alt="" />
+										</div>
+										<div class="problem__feature-body">
+											<h3 class="problem__feature-title">
+												Сценарій у стосунках з партнером/грошима
+											</h3>
+											<p class="problem__feature-text">
+												Прихована геометрія, що формує ваші найближчі зв'язки та
+												достаток
+											</p>
+										</div>
+									</article>
+
+									<article class="problem__feature" role="listitem">
+										<div class="problem__feature-icon" aria-hidden="true">
+											<img src="img/decisions/decision-04-1.svg" alt="" />
+										</div>
+										<div class="problem__feature-body">
+											<h3 class="problem__feature-title">
+												Періоди змін на 1-2 роки вперед
+											</h3>
+											<p class="problem__feature-text">
+												Точні можливості, визначені на основі ваших особистих
+												циклів
+											</p>
+										</div>
+									</article>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="courses section" id="courses">
+					<div class="container">
+						<header class="section-head">
+							<h2 class="section__title _center">Авторські курси</h2>
+						</header>
+
+						<div class="courses__list grid grid--3">
+							<div class="course-card__wrap">
+								<article class="course-card" data-id="service_01">
+									<div class="course-card__icon-wrap" aria-hidden="true">
+										<img
+											class="course-card__icon"
+											src="img/icons/01.svg"
+											alt="" />
+									</div>
+
+									<h3 class="course-card__title">Матриця Долі: Перші Ключі</h3>
+									<p class="course-card__text">
+										Базовий курс з розшифрування вашої матриці, призначення та
+										життєвих сценаріїв.
+									</p>
+
+									<div class="course-card__meta">
+										<div class="course-card__meta-row">
+											<span>21 година</span>
+											<span class="course-card__price">2000₴</span>
+										</div>
+										<button class="button _simple js-open-popup">
+											<span class="button-label _default">Детальніше</span>
+											<span class="button-label _hidden">Згорнути</span>
+										</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="course-card__wrap">
+								<article class="course-card" data-id="service_02">
+									<div class="course-card__icon-wrap" aria-hidden="true">
+										<img
+											class="course-card__icon"
+											src="img/icons/02.svg"
+											alt="" />
+									</div>
+
+									<h3 class="course-card__title">
+										Основи самопізнання через Числа
+									</h3>
+									<p class="course-card__text">
+										Навчіться розуміти себе, характер і потенціал через силу
+										персональних числових кодів.
+									</p>
+
+									<div class="course-card__meta">
+										<div class="course-card__meta-row">
+											<span>27 годин</span>
+											<span class="course-card__price">2400₴</span>
+										</div>
+										<button class="button _simple js-open-popup">
+											<span class="button-label _default">Детальніше</span>
+											<span class="button-label _hidden">Згорнути</span>
+										</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="course-card__wrap">
+								<article class="course-card" data-id="service_03">
+									<div class="course-card__icon-wrap" aria-hidden="true">
+										<img
+											class="course-card__icon"
+											src="img/icons/03.svg"
+											alt="" />
+									</div>
+
+									<h3 class="course-card__title">Твоя Матриця: Шлях до себе</h3>
+									<p class="course-card__text">
+										Відкрий власний код долі, зрозумій таланти, уроки та
+										напрямок особистісного розвитку.
+									</p>
+
+									<div class="course-card__meta">
+										<div class="course-card__meta-row">
+											<span>30 годин</span>
+											<span class="course-card__price">3100₴</span>
+										</div>
+										<button class="button _simple js-open-popup">
+											<span class="button-label _default">Детальніше</span>
+											<span class="button-label _hidden">Згорнути</span>
+										</button>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<div class="section__button">
+							<a href="#" class="button _large">Переглянути всі курси</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="services section _light" id="services">
+					<div class="container">
+						<header class="section-head">
+							<h2 class="section__title _center">Мої послуги</h2>
+						</header>
+
+						<div class="grid grid--4">
+							<article class="service-card">
+								<img
+									class="service-card__icon"
+									src="img/icons/05.svg"
+									alt=""
+									aria-hidden="true" />
+								<h3 class="service-card__title">Консультація «Матриця долі»</h3>
+								<p class="service-card__text">
+									Персональний розбір вашого коду народження, життєвих уроків,
+									талантів і ключових періодів.
+								</p>
+								<div class="service-card__price">2000₴</div>
+								<a class="button _simple" href="#contact">Замовити послугу</a>
+							</article>
+
+							<article class="service-card">
+								<img
+									class="service-card__icon"
+									src="img/icons/08.svg"
+									alt=""
+									aria-hidden="true" />
+								<h3 class="service-card__title">
+									Консультація «Зцілення грошової карми»
+								</h3>
+								<p class="service-card__text">
+									Виявлення фінансових блоків, кармічних програм і шляхів
+									відкриття грошового потоку.
+								</p>
+								<div class="service-card__price">2000₴</div>
+								<a class="button _simple" href="#contact">Замовити послугу</a>
+							</article>
+
+							<article class="service-card">
+								<img
+									class="service-card__icon"
+									src="img/icons/10.svg"
+									alt=""
+									aria-hidden="true" />
+								<h3 class="service-card__title">
+									Консультація «Тайм-менеджмент на рік»
+								</h3>
+								<p class="service-card__text">
+									Персональний числовий прогноз для планування рішень, запусків
+									і ключових подій року.
+								</p>
+								<div class="service-card__price">2000₴</div>
+								<a class="button _simple" href="#contact">Замовити послугу</a>
+							</article>
+
+							<article class="service-card">
+								<img
+									class="service-card__icon"
+									src="img/icons/11.svg"
+									alt=""
+									aria-hidden="true" />
+								<h3 class="service-card__title">
+									Консультація «Кармічні стосунки»
+								</h3>
+								<p class="service-card__text">
+									Аналіз сумісності, спільних уроків і кармічних вузлів у ваших
+									взаєминах.
+								</p>
+								<div class="service-card__price">2000₴</div>
+								<a class="button _simple" href="#contact">Замовити послугу</a>
+							</article>
+						</div>
+
+						<div class="section__button">
+							<a href="#" class="button _large">Переглянути всі послуги</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="about section" id="about">
+					<div class="container about__grid">
+						<div class="about__content">
+							<div class="about__badge">Нумеролог</div>
+							<header class="section-head">
+								<h2 class="section__title _center">Валерія Цикало</h2>
+							</header>
+
+							<div class="text-content">
+								<p>
+									...або як сказав мій друг у мої 19 років «Велєрі» і вже
+									близько 10 років я дружу з числами краще, ніж з деякими
+									людьми.
+								</p>
+								<p>
+									Нумерологія — це не просто формули й дати народження. Це як
+									Google Maps для душі: показує, куди йти, чого уникати і чому
+									знову вибираєш не того хлопця. Моя мета та сенс — занурити вас
+									у світ, де карма має сенс, а числа відкривають глибини душі.
+									Без моралізаторства, пафосу і «відкрий чакру». Просто, ясно,
+									красиво і трохи з іронією.
+								</p>
+
+								<ul>
+									<li>
+										Я ніколи не зупинялась у пізнанні себе (та своєї карми, яка
+										явно вирішила влаштувати мені серіал).
+									</li>
+									<li>
+										У моєму житті стільки кармічних уроків, що можна було б
+										зняти трилогію. Але я не скаржусь, я вчусь та аналізую і
+										ділюсь цим із вами.
+									</li>
+									<li>
+										Моя мета та сенс — занурити вас у світ, де карма має сенс, а
+										числа відкривають глибини душі.
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<figure class="about__photo">
+							<img src="img/photo-01.avif" alt="Портретне фото" />
+						</figure>
+					</div>
+				</section>
+
+				<section class="contact section _light" id="contact">
+					<div class="container">
+						<header class="section-head">
+							<h2 class="section__title _center">Маєте запитання?</h2>
+						</header>
+						<div class="contact__grid">
+							<div class="contact__form">
+								<form class="form" action="#" method="post">
+									<div class="form__field">
+										<label class="form__label" for="name">Ім'я</label>
+										<input
+											class="form__input"
+											id="name"
+											name="name"
+											type="text"
+											autocomplete="name" />
+									</div>
+
+									<div class="form__field">
+										<label class="form__label" for="email">Email</label>
+										<input
+											class="form__input"
+											id="email"
+											name="email"
+											type="email"
+											autocomplete="email" />
+									</div>
+
+									<div class="form__field">
+										<label class="form__label" for="message"
+											>Повідомлення</label
+										>
+										<textarea
+											class="form__textarea"
+											id="message"
+											name="message"></textarea>
+									</div>
+
+									<div class="form__button">
+										<button class="button _large" type="submit">
+											Відправити
+										</button>
+									</div>
+								</form>
+							</div>
+
+							<aside class="contact__social">
+								<div class="social__list">
+									<a href="#" class="social__item">
+										<figure class="social__icon">
+											<img src="img/social/social-01.svg" alt="instagram" />
+											<figcaption>
+												<b>Мій Iнстаграм</b>
+												<span>
+													Мій блог та місце сили, де я ділюсь власним досвідом
+													та трансформацією
+												</span>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="#" class="social__item">
+										<figure class="social__icon">
+											<img src="img/social/social-02.svg" alt="instagram" />
+											<figcaption>
+												<b>Мій Телеграм</b>
+												<span>
+													Мій блог та місце сили, де я ділюсь власним досвідом
+													та трансформацією
+												</span>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="#" class="social__item">
+										<figure class="social__icon">
+											<img src="img/social/social-03.svg" alt="instagram" />
+											<figcaption>
+												<b>Мій Тредс</b>
+												<span>
+													Мій блог та місце сили, де я ділюсь власним досвідом
+													та трансформацією
+												</span>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="#" class="social__item">
+										<figure class="social__icon">
+											<img src="img/social/social-04.svg" alt="instagram" />
+											<figcaption>
+												<b>Мій Тік-Ток</b>
+												<span>
+													Мій блог та місце сили, де я ділюсь власним досвідом
+													та трансформацією
+												</span>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="container footer__inner">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.svg" alt="" />
+					</a>
+
+					<ul class="footer__links">
+						<li>
+							<a href="#" aria-label="Політика конфіденційності"
+								>Політика конфіденційності</a
+							>
+						</li>
+						<li>
+							<a href="#" aria-label="Політика конфіденційності"
+								>Публічна оферта</a
+							>
+						</li>
+					</ul>
+
+					<div class="footer__copy">© 2026 Валерія Цикало. Нумеролог</div>
+
+					<div class="footer__dev">
+						Дизайн та розробка:
+						<a href="#">Розрообник</a>
+					</div>
+				</div>
+			</footer>
+
+			<div class="modal" id="modal" hidden>
+				<div class="modal__overlay" data-modal-close></div>
+				<div
+					class="modal__dialog"
+					role="dialog"
+					aria-modal="true"
+					aria-labelledby="modal-title"
+					tabindex="-1">
+					<button class="modal__close" type="button" data-modal-close>×</button>
+					<div id="modal__content" class="modal__content"></div>
+				</div>
+			</div>
+
+			<template id="tpl-details">
+				<div class="modal__grid">
+					<figure class="modal__image">
+						<img src="img/icons/01.svg" alt="icon" id="modal__image" />
+					</figure>
+
+					<div class="modal__text">
+						<h3 id="modal__title" class="section__title">Example Title</h3>
+						<div id="modal__price" class="modal__price"></div>
+						<div
+							id="modal__description"
+							class="section__description text-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+								varius hendrerit libero vel aliquet. Donec dictum scelerisque
+								mauris, et pulvinar purus congue eget. Phasellus venenatis
+								convallis nulla nec condimentum. Curabitur dapibus fermentum
+								nunc id molestie. Donec a eros sed nulla consectetur malesuada
+								ac ac mauris. Etiam eleifend tellus non sodales pharetra.
+								Curabitur convallis diam eu ex consequat lobortis. Duis libero
+								magna, viverra eu ligula a, molestie bibendum quam. Morbi non
+								turpis non quam porttitor viverra nec non libero. Nulla nec
+								tellus sit amet magna egestas dictum id a sapien. Mauris dapibus
+								vulputate fringilla.
+							</p>
+							<h4>Praesent rutrum sagittis sollicitudin.</h4>
+							<ol>
+								<li>Cras orci lacus</li>
+								<li>Ultricies nec arcu in</li>
+								<li>Sodales aliquam turpis.</li>
+							</ol>
+							<p>
+								Curabitur ut laoreet leo, et dignissim quam. Interdum et
+								malesuada fames ac ante ipsum primis in faucibus. Mauris sodales
+								tristique augue. Interdum et malesuada fames ac ante ipsum
+								primis in faucibus. Nam in rhoncus felis, ac aliquam erat.
+								Aliquam ornare ut dolor a semper. In ac consequat diam. Praesent
+								ornare lacus et enim suscipit blandit eget a erat. Nam sem nisl,
+								tempus nec vestibulum sed, pretium ac arcu. Aliquam erat
+								volutpat. Curabitur blandit purus quis massa pulvinar consequat.
+								Morbi scelerisque augue vel elit luctus tempor. Sed luctus ante
+								nec lacinia gravida.
+							</p>
+						</div>
+					</div>
+
+					<div class="modal__form">
+						<div class="section__description">
+							<p>
+								Для замовлення курсу "Основи самопізнання через Числа" вкажіть
+								свої дані у формі та здійсніть оплату.
+							</p>
+							<p>
+								Після цього я зв'яжуся з Вами і ми розпочнемо курс у зручний для
+								Вас час.
+							</p>
+						</div>
+
+						<form class="form" action="#" method="post">
+							<div class="form__field">
+								<label class="form__label" for="name">Ім'я</label>
+								<input
+									class="form__input"
+									id="name"
+									name="name"
+									type="text"
+									autocomplete="name" />
+							</div>
+
+							<div class="form__field">
+								<label class="form__label" for="email">Email</label>
+								<input
+									class="form__input"
+									id="email"
+									name="email"
+									type="email"
+									autocomplete="email" />
+							</div>
+
+							<div class="form__button">
+								<button class="button _large" type="submit">Відправити</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</template>
+		</div>
+
+		<script src="dist/js/jquery.min.js"></script>
+		<script src="dist/js/main.min.js"></script>
+
+		<script>
+			(function () {
+				var header = document.querySelector('.header');
+				var toggle = document.querySelector('[data-menu-toggle]');
+				var drawer = document.querySelector('[data-menu-drawer]');
+				var links = document.querySelectorAll('[data-menu-link]');
+
+				function setScrolled() {
+					if (window.scrollY > 12) header.classList.add('_scrolled');
+					else header.classList.remove('_scrolled');
+				}
+
+				function setMenu(open) {
+					header.classList.toggle('header--menu-open', open);
+					toggle.setAttribute('aria-expanded', String(open));
+				}
+
+				setScrolled();
+				window.addEventListener('scroll', setScrolled, { passive: true });
+
+				if (toggle && drawer) {
+					toggle.addEventListener('click', function () {
+						var open = !header.classList.contains('header--menu-open');
+						setMenu(open);
+					});
+
+					links.forEach(function (a) {
+						a.addEventListener('click', function () {
+							setMenu(false);
+						});
+					});
+				}
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+/* ---------- SERVICES ---------- */
+.services {
+	position: relative;
+	z-index: 2;
+	&__slider {
+		@media (min-width: 1024px) {
+			.swiper-wrapper {
+				display: grid;
+				gap: 24px;
+				transform: none !important;
+			}
+			.swiper-slide {
+				width: auto !important;
+			}
+		}
+		@media (max-width: 1024px) {
+			max-width: 100%;
+			overflow: visible;
+			.swiper-wrapper {
+				flex-wrap: nowrap;
+				align-items: stretch;
+				gap: 0;
+			}
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px;
+		&._multiline {
+			@media (max-width: 1024px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@media (max-width: 768px) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+.service-card {
+	height: 100%;
+	padding: 28px;
+	border: 1px solid rgba(184, 134, 11, 0.1);
+	background: rgba(10, 10, 15, 0.5);
+	transition:
+		border-color 0.25s ease,
+		transform 0.25s ease;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	&:hover {
+		border-color: rgba(184, 134, 11, 0.3);
+		.service-card {
+			&__icon {
+				color: var(--color-gold);
+			}
+			&__title {
+				color: var(--color-gold);
+			}
+		}
+	}
+	&__icon {
+		width: 80px;
+		height: 80px;
+		color: rgba(184, 134, 11, 0.85);
+		margin-bottom: 18px;
+		transition: color 0.25s ease;
+	}
+	&__title {
+		margin: 0 0 10px;
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 21px;
+		transition: color 0.25s ease;
+	}
+	&__text {
+		margin: 0 0 18px;
+		color: var(--color-muted);
+		font-size: 15px;
+		line-height: 1.65;
+	}
+	&__price {
+		margin-top: auto;
+		width: 100%;
+		padding-block: 14px;
+		border-top: 1px solid rgba(184, 134, 11, 0.1);
+		font-family: 'Cormorant Garamond', serif;
+		color: var(--color-gold);
+		font-size: 26px;
+	}
+	.button {
+		width: 100%;
+	}
+}

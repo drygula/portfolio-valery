@@ -1,0 +1,96 @@
+.ui {
+	--gap: 16px;
+	--t: 0.8s;
+	--ease: ease-in-out;
+	/* --ease: cubic-bezier(0.2, 0.8, 0.2, 1); */
+
+	--c1: 1fr;
+	--c2: 1fr;
+	--c3: 1fr;
+	--c4: 1fr;
+	--c5: 1fr;
+
+	--panelRow: 0fr;
+}
+
+.card-content {
+	padding: 16px;
+}
+
+.ui__grid {
+	display: grid;
+	/* gap: var(--gap); */
+	grid-template-columns: var(--c1) var(--c2) var(--c3) var(--c4) var(--c5);
+	transition: grid-template-columns var(--t) var(--ease);
+	min-width: 0;
+}
+
+.card {
+	min-width: 0;
+	overflow: hidden;
+	background: #eee;
+	border-radius: 14px;
+	min-height: 84px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 12px;
+	margin-inline: calc(var(--gap) / 2);
+	transition: all var(--t) var(--ease);
+}
+.card.is-active {
+	margin-inline: 0; /* зводимо margin до нуля */
+}
+
+.card__title {
+	font: 800 16px/1.2 system-ui;
+}
+.card__btn {
+	border: 0;
+	border-radius: 10px;
+	padding: 10px 12px;
+	background: #111;
+	color: #fff;
+	font: 700 13px/1 system-ui;
+	cursor: pointer;
+}
+
+.panel {
+	margin-top: var(--gap);
+	display: grid;
+	grid-template-rows: var(--panelRow);
+	transition: grid-template-rows var(--t) var(--ease);
+}
+
+.panel__inner {
+	overflow: hidden;
+	background: #111;
+	color: #fff;
+	border-radius: 14px;
+	padding: 16px;
+}
+
+.panel__content h3 {
+	margin: 0 0 8px;
+	font: 900 18px/1.2 system-ui;
+}
+.panel__content p {
+	margin: 0 0 12px;
+	font: 400 14px/1.5 system-ui;
+	opacity: 0.85;
+}
+
+.panel__close {
+	border: 0;
+	border-radius: 10px;
+	padding: 10px 12px;
+	background: #fff;
+	color: #111;
+	font: 800 13px/1 system-ui;
+	cursor: pointer;
+}
+
+/* Стан "відкрито": панель розгорнута */
+.ui.is-open {
+	--panelRow: 1fr;
+}

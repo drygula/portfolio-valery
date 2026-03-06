@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  fill="none"
+  stroke="#B8860B"
+  stroke-width="0.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="50" cy="50" r="48" stroke-width="1.5"></circle>
+  <polygon points="50,20 78,40 70,74 30,74 22,40"></polygon>
+  <line x1="50" y1="20" x2="50" y2="74"></line>
+  <line x1="22" y1="40" x2="78" y2="40"></line>
+  <circle cx="50" cy="40" r="4.5"></circle>
+</svg>

@@ -1,0 +1,65 @@
+/* ---------- ABOUT ---------- */
+.about {
+	position: relative;
+	.container {
+		position: relative;
+	}
+	&__grid {
+		display: grid;
+		gap: 48px;
+		align-items: center;
+		grid-template-columns: 1.15fr 0.85fr;
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__badge {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		font-size: 12px;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--color-gold);
+		margin-bottom: 12px;
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 6px;
+			aspect-ratio: 1;
+			background-color: currentColor;
+			transform: rotate(45deg);
+		}
+	}
+	&__photo {
+		position: absolute;
+		bottom: -90px;
+		right: -7vw;
+		height: calc(95% + 200px);
+		width: auto;
+		margin: 0;
+		@media (max-width: 1024px) {
+			bottom: auto;
+			top: 0;
+			right: -50vw;
+			left: 53%;
+			height: min(95%, 70vw);
+		}
+		@media (max-width: 768px) {
+			position: static;
+			order: -2;
+			margin-block-start: -40px;
+			max-width: 360px;
+		}
+		img {
+			width: auto;
+			height: 100%;
+			object-position: bottom left;
+			object-fit: contain;
+			mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+		}
+	}
+}

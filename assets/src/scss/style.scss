@@ -1,0 +1,18 @@
+@use 'inc/vars';
+@use 'inc/base';
+@use 'inc/fonts';
+@use 'inc/structure';
+@use 'inc/forms';
+@use 'general';
+
+@use 'parts/header';
+@use 'parts/footer';
+@use 'parts/modal';
+
+@use 'sections/hero';
+@use 'sections/problem';
+@use 'sections/cards';
+@use 'sections/course';
+@use 'sections/services';
+@use 'sections/about';
+@use 'sections/contact';
